@@ -1,0 +1,96 @@
+.manage-items {
+  padding: 30px;
+  background-color: #f9fafb;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.manage-items h2 {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.manage-items label {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: #34495e;
+}
+
+.manage-items select,
+.manage-items input,
+.manage-items textarea {
+  padding: 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #f7f9fc;
+}
+
+.manage-items button {
+  padding: 12px 25px;
+  background-color: #2980b9;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.manage-items button:hover {
+  background-color: #3498db;
+}
+
+/* Styling the store items */
+.store-items ul {
+  list-style: none;
+  padding: 0;
+}
+
+.store-items ul li {
+  background-color: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.store-items ul li h4 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.store-items ul li p {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+.store-items ul li .item-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.store-items ul li .item-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.store-items ul li .item-actions button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.store-items ul li .item-actions button:hover {
+  background-color: #c0392b;
+}

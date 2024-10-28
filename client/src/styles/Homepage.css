@@ -1,0 +1,405 @@
+/* Global Styles */
+body {
+  background-color: #f7f7f7;
+  font-family: 'Roboto', sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+/* Only apply these styles to the homepage */
+.Homepage {
+  background: none; /* Ensure the homepage has no global background overrides */
+}
+
+/* Header */
+.Homepage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #2c3e50; /* Primary color */
+  color: white;
+}
+
+.logo-container h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ecf0f1;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: #3498db; /* Accent color on hover */
+}
+
+.auth-buttons {
+  margin-left: auto;
+}
+
+.get-started-btn {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.get-started-btn:hover {
+  background-color: #1f78b4;
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 80px;
+  background: linear-gradient(135deg, #3498db, #2c3e50);
+  color: white;
+  border-radius: 15px;
+  margin: 30px;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.shop-now-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #ecf0f1;
+  color: #3498db;
+  border: none;
+  border-radius: 30px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.shop-now-btn:hover {
+  background-color: #dcdfe2;
+  transform: scale(1.05);
+}
+
+/* Featured Products */
+.featured-products {
+  padding: 50px;
+}
+
+.featured-products h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.product-list {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  width: 200px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.product-item p {
+  font-size: 1.1rem;
+  margin-top: 10px;
+  color: #34495e;
+}
+
+.product-item span {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2980b9;
+}
+
+.product-item:hover {
+  transform: scale(1.05);
+}
+
+/* About Us Section */
+/* About Us Section */
+.about-us {
+  padding: 60px;
+  background-color: #f7f9fc;
+  text-align: center;
+  color: #333;
+}
+
+.about-us h2 {
+  font-size: 2.8rem; /* Increased size for a stronger heading */
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: #2980b9;
+  letter-spacing: 1px; /* Adds slight spacing between letters for readability */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.about-description {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #7f8c8d;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.8; /* Increased line height for better readability */
+  transition: all 0.3s ease;
+}
+
+.about-description .highlight {
+  font-weight: 600; /* Bolder font for emphasis */
+  color: #2980b9;
+  font-size: 1.3rem;
+}
+
+.about-list {
+  font-size: 1.2rem; /* Slightly larger font for emphasis */
+  color: #7f8c8d;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+  line-height: 1.8;
+}
+
+.about-list li {
+  position: relative;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  text-align: left;
+  font-weight: 500;
+  letter-spacing: 0.5px; /* Adds slight spacing for a polished look */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.about-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #3498db;
+  font-size: 1.2rem;
+}
+
+.about-list li:hover {
+  color: #2980b9;
+  transform: translateX(5px); /* Slight movement to the right on hover */
+}
+
+.about-us p:hover {
+  color: #34495e;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow effect on hover */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-us {
+    padding: 40px;
+  }
+
+  .about-description {
+    font-size: 1.1rem;
+  }
+
+  .about-list li {
+    font-size: 1rem;
+  }
+}
+
+/* Compact Contact Us Section */
+.contact-us {
+  padding: 30px;
+  background-color: #2c3e50;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.contact-us h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.contact-us-content {
+  flex: 1;
+  text-align: left;
+}
+
+.contact-us-content p {
+  max-width: 450px; /* Slightly smaller for compact layout */
+  margin-bottom: 10px;
+  line-height: 1.4;
+  font-size: 1rem;
+}
+
+.contact-us-content p strong {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.contact-form-container {
+  flex: 1;
+  background-color: #f7f9fc;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #34495e;
+  font-size: 0.9rem; /* Slightly smaller font size for compactness */
+}
+
+.contact-form h3 {
+  font-size: 1.5rem; /* Reduced size */
+  margin-bottom: 12px; /* Reduced margin to tighten the design */
+  color: #2c3e50;
+  text-align: center;
+}
+
+.contact-form .form-group {
+  margin-bottom: 10px; /* Reduced margin between form elements */
+}
+
+.contact-form label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #2c3e50;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 8px; /* Smaller padding */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #333;
+  background-color: #fff; /* Ensures the input text is visible */
+  box-sizing: border-box; /* Ensure inputs fit within their containers */
+}
+
+.contact-form textarea {
+  height: 80px; /* Reduced height */
+  resize: none; /* Disable resize */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #3498db;
+  background-color: #f1f9ff; /* Light background on focus */
+}
+
+.send-message-btn {
+  padding: 8px 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 100%;
+}
+
+.send-message-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.02); /* Slight hover effect */
+}
+
+.send-message-btn:active {
+  transform: scale(0.98); /* Press effect */
+}
+
+/* Subtle Effects for Inputs */
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: #2980b9;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact-us {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-form-container,
+  .contact-us-content {
+    width: 100%;
+  }
+}
+/* Minimalist Scrollbar with Site Colors */
+::-webkit-scrollbar {
+  width: 6px; /* Very thin scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Invisible track */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #34495e; /* Primary site blue */
+  border-radius: 10px; /* Rounded thumb */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #34495e; /* Slightly darker blue on hover */
+}
+
+::-webkit-scrollbar-thumb:active {
+  background-color: #2980b9; /* Green color when actively scrolling */
+}
+/* Add this new section for scroll-triggered appearance */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Rest of the CSS */

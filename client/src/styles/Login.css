@@ -1,0 +1,93 @@
+/* Global Styles */
+body {
+    background-color: #F7F7F7; /* Light gray background */
+    font-family: 'Roboto', sans-serif; /* Clean sans-serif font */
+    color: #333333; /* Dark gray text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Form Container */
+.auth-container {
+    background-color: #FFFFFF;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* More pronounced shadow */
+    width: 400px;
+    margin: 120px auto;
+    text-align: center;
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+.auth-container:hover {
+    transform: scale(1.02); /* Subtle zoom on hover */
+}
+
+.auth-container h2 {
+    color: #3498db; /* Updated to match the blue theme */
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+.auth-container form {
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Smooth transition on focus */
+    background-color: #f9f9f9;
+}
+
+input:focus, select:focus {
+    border-color: #3498db; /* Blue border on focus */
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3); /* Light blue glow */
+}
+
+/* Buttons */
+button {
+    background-color: #2ecc71; /* Bright green */
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+    background-color: #27ae60; /* Darker green on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+button:active {
+    background-color: #1e8449; /* Even darker green on click */
+}
+
+/* Switch Links */
+.switch-link {
+    margin-top: 10px;
+}
+
+.switch-link a {
+    color: #FFC107; /* Accent Amber */
+    text-decoration: none;
+}
+
+.switch-link a:hover {
+    text-decoration: underline;
+    color: #FFA000; /* Slightly darker amber on hover */
+}
+.auth-page body, .auth-page html {
+  overflow: hidden; /* Prevent scrolling only on signup page */
+}
